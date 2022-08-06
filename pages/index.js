@@ -14,7 +14,7 @@ export default function Home({allPostsData}) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>test</title>
+        <title>kanarui.dev</title>
       </Head>
       <div className={styles.ContentContainer}>
         <div id='#first' className={styles.leftContainer}>
