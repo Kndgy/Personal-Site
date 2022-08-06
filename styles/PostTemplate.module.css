@@ -1,0 +1,20 @@
+.container{
+  width: 100%;
+  padding: 2.5rem;
+  height: max-content;
+  background-color: #F3F3F5;
+  color: black;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.desc{
+  height: 100%;
+}
+
+.link{
+  font-weight: bold;
+}
