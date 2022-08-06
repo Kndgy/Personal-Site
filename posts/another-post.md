@@ -1,11 +1,11 @@
 ---
-title: "scond post"
-author: "second author"
-category: "second"
-date: "second"
+date: "Aug 8, 2022"
+title: "scond title"
+desc: "description"
 bannerImage: "secondd"
+category: ["test ", "second test"]
 tags:
-    - second
+    - 
 ---
 
 ## This is an example blog post

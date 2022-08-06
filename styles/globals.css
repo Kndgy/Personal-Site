@@ -43,6 +43,13 @@ h1{
   margin-inline-end: 0px;
 }
 
+h6{
+  margin-block-start: 0em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 ::-webkit-scrollbar{
   width: 5px;
 }

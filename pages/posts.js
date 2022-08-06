@@ -9,13 +9,12 @@ export default function Blog({posts}){
 
             const {slug, frontmatter} = post;
             
-            const {title, author, category, date, bannerImage, tags} = frontmatter
+            const {title, desc, category, date, bannerImage, tags} = frontmatter
 
             return <article key={title}>
                 <Link href={`/posts/${slug}`}>
                     <h1>{title}</h1>
                 </Link>
-                <h3>{author}</h3>
                 <h3>{date}</h3>
             </article>
         })}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import emil from '../public/emil.png'
+import emil from '../public/emil.jpg'
 import ProjectTemplate from '../components/ProjectTemlate'
 import data from '../data/projects.json'
 import { getSortedPostsData } from '../components/posts'
@@ -31,7 +31,7 @@ export default function Home({allPostsData}) {
               pretty much its just a bunch of stuff i'm doing and things i write.
             </div>
             <div className={styles.Social}>
-              <Link href={'/'}>Home</Link>|<a href='#'>Github</a>|<a href='#'>Email</a>|<a href='#'>Discord</a>
+              <Link href={'/'}>Home</Link>|<a href='https://github.com/Kndgy'>Github</a>|<a href="mailto: ghanirafli8@gmail.com">Email</a>|<a href='#'>Discord</a>
             </div>
           </div>
         </div>
@@ -44,8 +44,8 @@ export default function Home({allPostsData}) {
                 )
               })}
             <h1>Posts</h1>
-              {allPostsData.map(({ id, date, title,author }) => (
-                <PostTemplate key={id} title={title} desc={author}/>
+              {allPostsData.map(({ id, date, title, desc, category, tags }) => (
+                <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
               ))}
           </div>
         </div>

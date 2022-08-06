@@ -1,11 +1,11 @@
 ---
-title: "example post"
-author: "first"
-category: "example"
-date: "2022-08-06"
+date: "Aug 8, 2022"
+title: "First Title"
+desc: "description"
 bannerImage: "url-to-image.png"
+category: "first category"
 tags:
-    - example
+    - 
 ---
 
 ## This is an example blog post

@@ -1,17 +1,18 @@
 import Head from 'next/head';
 import styles from '../styles/PostTemplate.module.css'
 
-const PostTemplate = ({desc, title,}) =>{
+const PostTemplate = ({desc, title, date, tags, category}) =>{
   return(
     <div className={styles.container}>
-      <div className={styles.title}>
-        <h3>{title}</h3>
+      <div className={styles.header}>
+        <h6>{date}</h6>
+        <span className={styles.title}>{title}</span>
       </div>
-      <div className={styles.desc}>
-        <div>
-          {desc}
-        </div>
+      <div>
+        {desc}
       </div>
+      {category}
+      {tags}
     </div>
   )
 }

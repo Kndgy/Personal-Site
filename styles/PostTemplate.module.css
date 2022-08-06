@@ -8,13 +8,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.desc{
-  height: 100%;
+.header{
+  text-align: center;
+  color: #e1214d;
 }
 
-.link{
+.title{
+  font-size: 19px;
   font-weight: bold;
 }
+
