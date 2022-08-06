@@ -26,7 +26,9 @@ export default function Home({allPostsData}) {
               </div>
             </div>
             <div className={styles.About}>
-              hello there! i'm kan. a self proclaimed artist and software engineer, this is where i put my stuff on the internet. pretty much its just a bunch of stuff i'm doing and things i write.
+              hello there! i'm kan. a self proclaimed artist and software engineer, 
+              this is where i put my stuff on the internet. 
+              pretty much its just a bunch of stuff i'm doing and things i write.
             </div>
             <div className={styles.Social}>
               <Link href={'/'}>Home</Link>|<a href='#'>Github</a>|<a href='#'>Email</a>|<a href='#'>Discord</a>
