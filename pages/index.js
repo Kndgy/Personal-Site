@@ -10,7 +10,7 @@ import Link from 'next/link'
 // import Link from 'next/link';
 
 export default function Home({allPostsData}) {
-
+  console.log(allPostsData[0].id)
   return (
     <div className={styles.container}>
       <Head>
@@ -45,7 +45,11 @@ export default function Home({allPostsData}) {
               })}
             <h1>Posts</h1>
               {allPostsData.map(({ id, date, title, desc, category, tags }) => (
-                <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
+                <Link href={`posts/${id}`}>
+                  <a>
+                    <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
+                  </a>
+                </Link>
               ))}
           </div>
         </div>
