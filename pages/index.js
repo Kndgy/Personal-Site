@@ -43,17 +43,17 @@ export default function Home({allPostsData}) {
           <div className={styles.rightContent}>
             <h1>Personal Projects</h1>
               {ProjectPost.map(({ id, date, title, desc, category, tags, type }) => (
-                <Link href={`posts/${id}`}>
+                <Link key={id} href={`posts/${id}`}>
                   <a>
-                    <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
+                    <PostTemplate title={title} desc={desc} category={category} date={date} tags={tags}/>
                   </a>
                 </Link>
               ))}
             <h1>Posts</h1>
               {Post.map(({ id, date, title, desc, category, tags, type }) => (
-                <Link href={`posts/${id}`}>
+                <Link key={id} href={`posts/${id}`}>
                   <a>
-                    <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
+                    <PostTemplate title={title} desc={desc} category={category} date={date} tags={tags}/>
                   </a>
                 </Link>
               ))}
