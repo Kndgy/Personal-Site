@@ -10,7 +10,11 @@ import Link from 'next/link'
 // import Link from 'next/link';
 
 export default function Home({allPostsData}) {
-  console.log(allPostsData[0].id)
+
+  let AllPost = Array.from(allPostsData)
+  const ProjectPost = AllPost.filter(e => e.type === "project")
+  const Post = AllPost.filter(e => e.type !== "project")
+
   return (
     <div className={styles.container}>
       <Head>
@@ -38,13 +42,15 @@ export default function Home({allPostsData}) {
         <div className={styles.rightContainer}>
           <div className={styles.rightContent}>
             <h1>Personal Projects</h1>
-              {data.map((project) => {
-                return(
-                  <ProjectTemplate key={project.title} title={project.title} desc={project.description} siteLink={project.site} sourceLink={project.source}/>
-                )
-              })}
+              {ProjectPost.map(({ id, date, title, desc, category, tags, type }) => (
+                <Link href={`posts/${id}`}>
+                  <a>
+                    <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
+                  </a>
+                </Link>
+              ))}
             <h1>Posts</h1>
-              {allPostsData.map(({ id, date, title, desc, category, tags }) => (
+              {Post.map(({ id, date, title, desc, category, tags, type }) => (
                 <Link href={`posts/${id}`}>
                   <a>
                     <PostTemplate key={id} title={title} desc={desc} category={category} date={date} tags={tags}/>
