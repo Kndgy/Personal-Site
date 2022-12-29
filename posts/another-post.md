@@ -1,6 +1,7 @@
 ---
 date: "Aug 8, 2022"
 title: "scond title"
+type: ""
 desc: "description"
 bannerImage: "secondd"
 category: ["test ", "second test"]
