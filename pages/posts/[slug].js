@@ -1,18 +1,21 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
+import styles from '../../styles/PostContent.module.css'
 
 export default function Post({frontmatter, content}) {
 
   const {title, desc, category, date, bannerImage, tags} = frontmatter
 
-  return <main>
-      {/* <img src={bannerImage}/> */}
-      <h1>{title}</h1>
-      <h2>{date}</h2>
-      <h3>{category} || {tags.join()}</h3>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-  </main>
+  return (
+    <main className={styles.container}>
+        {/* <img src={bannerImage}/> */}
+        <h1>{title}</h1>
+        <h2>{date}</h2>
+        <h3>{category} {tags.join()}</h3>
+        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    </main>
+  )
 }
 
 export async function getStaticPaths() {
