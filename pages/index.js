@@ -6,14 +6,9 @@ import { getSortedPostsData } from '../components/posts'
 import PostTemplate from '../components/PostTemplate'
 import Link from 'next/link'
 import ProjectContainer from './projectContainer'
-// import Link from 'next/link';
-import fs from 'fs';
-import path from 'path';
+import { data } from '../data/data.js';
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const data = JSON.parse(fileContents);
 
   const allPostsData = getSortedPostsData();
   return {
@@ -25,7 +20,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({data, allPostsData}) {
-
+  console.log(data)
   let AllPost = Array.from(allPostsData)
   const Post = AllPost.filter(e => e.type !== "project")
 

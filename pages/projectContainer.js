@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import styles from '../styles/projectContainer.module.css'
-import emil from '../public/emil.jpg'
-import proj1 from '../public/proj-1.png'
 
 function ProjectTemplate({image, title, description, Link, LinkText, button='Learn more', index}){
     if(index % 2 === 0){
@@ -36,62 +34,11 @@ function ProjectTemplate({image, title, description, Link, LinkText, button='Lea
     )
 }
 
-const projectList = [
-    {
-        image:proj1,
-        title:'Nier Automata Wiki | Design System',
-        description:'description',
-        Link:'',
-        LinkText:'Go to site',
-        id:1
-    },
-    {
-        image:emil,
-        title:'Nier Automata Modular UI Components',
-        description:'description',
-        Link:'',
-        LinkText:'Go to site',
-        id:1
-    },
-    {
-        image:emil,
-        title:'JSX to Unreal UMG UI',
-        description:'description',
-        Link:'',
-        LinkText:'Go to site',
-        id:1
-    },
-    {
-        image:emil,
-        title:'ReactNode to JSON Transformer',
-        description:'description',
-        Link:'',
-        LinkText:'Go to site',
-        id:1
-    },
-    {
-        image:emil,
-        title:'FoodShare',
-        description:'description',
-        Link:'',
-        LinkText:'Go to site',
-        id:1
-    },
-]
-
 export default function ProjectContainer({data}){
     return(
         <div className={styles.container}>
             <div className={styles.title}>Side Project</div>
-            <div>
-              <h1>JSON Data</h1>
-                {data.map(items => (
-                  <li key={items.id}>
-                    <a href={`/pages/${items.id}`}>{items.title}</a>
-                  </li>
-                ))}
-            </div>
-            {projectList.map((item,index)=>(
+            {data.map((item,index)=>(
                 <ProjectTemplate
                     key={index}
                     index={index}

@@ -1,6 +1,6 @@
-import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { data } from '../../data/data.js';
 
 export default function Item({ item }) {
   return (
@@ -15,9 +15,6 @@ export default function Item({ item }) {
 }
 
 export async function getStaticPaths() {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const data = JSON.parse(fileContents);
 
   const paths = data.map(item => ({
     params: { id: item.id.toString() }
@@ -27,10 +24,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const data = JSON.parse(fileContents);
-
   const item = data.find(item => item.id.toString() === params.id);
 
   return { props: { item } };
