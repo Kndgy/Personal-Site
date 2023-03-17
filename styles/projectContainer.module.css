@@ -1,0 +1,93 @@
+.container{    
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 80px;
+    z-index: 1;
+    background-color: white;
+}
+
+.title{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subTitle{
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.projectsAlt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+    height: 40vh;
+    gap: 4rem;
+    /* background-color: aqua; */
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70%;
+    height: 40vh;
+    gap: 4rem;
+    /* background-color: aqua; */
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    min-width: auto;
+    max-width: 40%;
+    height: 100%;
+}
+
+.image img{
+    width: auto;
+    height: auto;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+    gap: 1rem;
+}
+
+.projectTitle{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.projectButton{
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    width: max-content;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.projectButton:hover{
+    background-color: black;
+    transition: 0.2s;
+    color: white;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

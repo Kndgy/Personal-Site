@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@200;300;400;500;600&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
-  color: #cd664d;
+  color: #e1214d;
+  font-weight: bold;
+  font-family: 'Space Grotesk', sans-serif;
   text-decoration: none;
   background-image: linear-gradient(90deg, #00000000 50%, #00000000 50%, #b4af9a 50%, #b4af9a 100%);
   background-size: 200%;
@@ -16,7 +23,7 @@ a {
 }
 
 a:hover{
-  color: #e1214d;
+  color: #cd664d;
   /* background-position: -100%; */
 }
 
@@ -26,6 +33,14 @@ a:hover{
 
 body {
   color: black;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  float: right;
 }
 
 h3{
