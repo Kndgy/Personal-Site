@@ -62,24 +62,6 @@ export default function Home({data, allPostsData}) {
       </div>
       <ProjectContainer data={data} id="project"/>
       <div id='blog' className={styles.postContainer}>
-        {/* <div id='' className={styles.leftContainer}>
-          <div className={styles.leftContent}>
-            <div className={styles.Picture}>
-              <span className={styles.cr}>art by D.K</span>
-              <div className={styles.pictureContainer}>
-                <Image src={emil} alt='emil' />
-              </div>
-            </div>
-            <div className={styles.About}>
-              hello there! i'm kan. a self proclaimed artist and software engineer, 
-              this is where i put my stuff on the internet. 
-              pretty much its just a bunch of stuff i'm doing and things i write.
-            </div>
-            <div className={styles.Social}>
-              <Link href={'/'}>Home</Link>|<a href='https://github.com/Kndgy'>Github</a>|<a href="mailto: ghanirafli8@gmail.com">Email</a>|<a href='#'>Discord</a>
-            </div>
-          </div>
-        </div> */}
         <div className={styles.rightContainer}>
           <div className={styles.rightContent}>
             <h1>Posts</h1>
