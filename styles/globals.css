@@ -25,8 +25,7 @@ a:hover{
 }
 
 body {
-  color: white;
-  background: #0C0F0C;
+  color: black;
 }
 
 h3{
@@ -57,11 +56,11 @@ h6{
   background-color: #dad4bb;
 }
 @media (prefers-color-scheme: dark) {
-  html {
+  /* html {
     color-scheme: dark;
   }
-  /* body {
+  body {
     color: white;
-    background: #404040;
+    background: #0C0F0C;
   } */
 }
