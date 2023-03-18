@@ -6,7 +6,7 @@
     align-items: center;
     gap: 80px;
     padding-bottom: 80px;
-    z-index: 1;
+    padding-top: 40px;
     background-color: white;
 }
 
@@ -61,7 +61,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 4rem;
     gap: 1rem;
 }
 
@@ -90,4 +89,140 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+
+@media only screen and (max-width:768px){
+
+    .container{    
+        font-family: 'Space Grotesk', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: white;
+    }
+
+    .projectsAlt{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+    
+    .projects{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .title{
+        padding-bottom: 0;
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        /* display: none; */
+    }
+
+    .image img{
+        width: auto;
+        height: auto;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .projectTitle{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .subTitle{
+        font-size: 14px;
+        opacity: 0.8;
+        font-weight: 300;
+    }
+    
+    .projectButton{
+        border: none;
+        border-radius: 8px;
+        padding: 6px 10px 6px 10px;
+        width: max-content;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .button{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-resolution: 2dppx) {
+
+    .container{    
+        font-family: 'Space Grotesk', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-bottom: 80px;
+        background-color: white;
+    }
+    
+    .projectsAlt{
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .projects{
+        width: 80%;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .projectTitle{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .subTitle{
+        font-size: 14px;
+        opacity: 0.8;
+        font-weight: 300;
+    }
+
+    .projectButton{
+        border: none;
+        border-radius: 8px;
+        padding: 6px 10px 6px 10px;
+        width: max-content;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
 }

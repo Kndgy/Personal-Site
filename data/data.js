@@ -37,7 +37,7 @@ export const data = [
         title:'ReactNode to JSON Transformer',
         description:'description',
         Link:'',
-        LinkText:'See NPM package',
+        LinkText:'See in NPM',
         id:4,
         site:'asds',
         repo:'adasd'

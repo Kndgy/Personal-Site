@@ -60,7 +60,8 @@ export default function Home({data, allPostsData}) {
       </div>
       <div className={styles.placehold}>
       </div>
-      <ProjectContainer data={data} id="project"/>
+      <div className={styles.bottomContainer}>
+      <div id='project'><ProjectContainer data={data}/></div>
       <div id='blog' className={styles.postContainer}>
         <div className={styles.rightContainer}>
           <div className={styles.rightContent}>
@@ -74,6 +75,7 @@ export default function Home({data, allPostsData}) {
               ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

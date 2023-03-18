@@ -11,7 +11,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
     }
     function siteCheck(){
         if(repo){
-            return <button className={styles.projectButton}><a href={repo}>Source code</a></button>
+            return <button className={styles.projectButton}><a href={repo}>Repository</a></button>
         }else{
             return
         }
@@ -38,7 +38,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
             <div className={styles.projectTitle}>{title}</div>
             <div className={styles.subTitle}>{description}</div>
             <div className={styles.button}>
-            <button className={styles.projectButton}><a href={Link}>{button}</a></button>
+                <button className={styles.projectButton}><a href={Link}>{button}</a></button>
                 {codeCheck()}
                 {siteCheck()}
             </div>
