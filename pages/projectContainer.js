@@ -4,14 +4,14 @@ import styles from '../styles/projectContainer.module.css'
 function ProjectTemplate({image, title, description, site, Link, siteText, repo, button='Learn more', index}){
     function codeCheck(){
         if(site){
-            return <button className={styles.projectButton}><a href={site}>{siteText}</a> </button>
+            return <a href={site}> <button className={styles.projectButton}> {siteText} </button> </a>
         }else{
             return
         }
     }
     function siteCheck(){
         if(repo){
-            return <button className={styles.projectButton}><a href={repo}>Repository</a></button>
+            return <a href={repo}><button className={styles.projectButton}>Repository</button></a>
         }else{
             return
         }
@@ -24,7 +24,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
                     <div className={styles.projectTitle}>{title}</div>
                     <div className={styles.subTitle}>{description}</div>
                     <div className={styles.button}>
-                        <button className={styles.projectButton}><a href={Link}>{button}</a></button>
+                        <a href={Link}><button className={styles.projectButton}>{button}</button></a>
                         {codeCheck()}
                         {siteCheck()}
                     </div>
@@ -38,7 +38,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
             <div className={styles.projectTitle}>{title}</div>
             <div className={styles.subTitle}>{description}</div>
             <div className={styles.button}>
-                <button className={styles.projectButton}><a href={Link}>{button}</a></button>
+                <a href={Link}><button className={styles.projectButton}>{button}</button></a>
                 {codeCheck()}
                 {siteCheck()}
             </div>

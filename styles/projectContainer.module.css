@@ -83,6 +83,7 @@
     background-color: black;
     transition: 0.2s;
     color: white;
+    cursor: pointer;
 }
 
 .button{
