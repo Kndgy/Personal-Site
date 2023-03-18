@@ -1,7 +1,9 @@
+import proj1 from '../public/proj-1.png'
+import emil from '../public/emil.jpg'
 
 export const data = [
     {
-        image:'/proj-1.png',
+        image:proj1,
         title:'Nier Automata Wiki | Design System',
         description:'description',
         Link:'',
@@ -11,7 +13,7 @@ export const data = [
         repo:'asdss'
     },
     {
-        image:'/emil.jpg',
+        image:emil,
         title:'Nier Automata Modular UI Components',
         description:'description',
         Link:'',
@@ -21,7 +23,7 @@ export const data = [
         repo:'asdas'
     },
     {
-        image:'/emil.jpg',
+        image:emil,
         title:'JSX to Unreal UMG UI',
         description:'description',
         Link:'',
@@ -31,7 +33,7 @@ export const data = [
         repo:'asdasd'
     },
     {
-        image:'/emil.jpg',
+        image:emil,
         title:'ReactNode to JSON Transformer',
         description:'description',
         Link:'',
@@ -41,7 +43,7 @@ export const data = [
         repo:'adasd'
     },
     {
-        image:'/emil.jpg',
+        image:emil,
         title:'FoodShare',
         description:'description',
         Link:'',

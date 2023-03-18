@@ -19,7 +19,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
     if(index % 2 === 0){
         return(
             <div className={styles.projects}>
-                <div className={styles.image}><Image width={400} height={300} alt="image" src={image} className={styles.image}/></div>
+                <div className={styles.image}><Image alt="image" src={image} className={styles.image}/></div>
                 <div className={styles.text}>
                     <div className={styles.projectTitle}>{title}</div>
                     <div className={styles.subTitle}>{description}</div>
@@ -43,7 +43,7 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
                 {siteCheck()}
             </div>
         </div>
-        <div className={styles.image}><Image width={400} height={300} alt="image" src={image} className={styles.image}/></div>
+        <div className={styles.image}><Image alt="image" src={image} className={styles.image}/></div>
     </div>
     )
 }
@@ -52,7 +52,7 @@ export default function ProjectContainer({data}){
     return(
         <div className={styles.container}>
             <div className={styles.title}>Side Project</div>
-            {data.map((item,index)=>(
+            {data?.map((item,index)=>(
                 <ProjectTemplate
                     key={index}
                     index={index}
