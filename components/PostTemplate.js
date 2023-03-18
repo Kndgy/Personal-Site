@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import styles from '../styles/PostTemplate.module.css'
 
 const PostTemplate = ({desc, title, date, tags, category}) =>{

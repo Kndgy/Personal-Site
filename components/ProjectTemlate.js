@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import styles from '../styles/ProjectTemplate.module.css'
 
 const ProjectTemplate = ({desc, title, siteLink, sourceLink}) =>{

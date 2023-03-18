@@ -52,7 +52,7 @@ export default function ProjectContainer({data}){
     return(
         <div className={styles.container}>
             <div className={styles.title}>Side Project</div>
-            {data.map((item,index)=>(
+            {data?.map((item,index)=>(
                 <ProjectTemplate
                     key={index}
                     index={index}

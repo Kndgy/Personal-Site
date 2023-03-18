@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import emil from '../public/emil.jpg'
 import { getSortedPostsData } from '../components/posts'
 import PostTemplate from '../components/PostTemplate'
 import Link from 'next/link'
