@@ -30,6 +30,7 @@
     width: 70%;
     height: 40vh;
     gap: 4rem;
+    padding-top: 80px;
 }
 
 .projects{
@@ -46,8 +47,9 @@
     flex-direction: column;
     justify-content: flex-end;
     width: auto;
-    min-width: auto;
+    min-width: 30%;
     max-width: 80%;
+    width: auto; 
     height: 100%;
 }
 
