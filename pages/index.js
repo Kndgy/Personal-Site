@@ -66,9 +66,7 @@ export default function Home({data, allPostsData}) {
             <h1>Posts</h1>
               {Post.map(({ id, date, title, desc, category, tags, type }) => (
                 <Link key={id} href={`posts/${id}`}>
-                  <a>
                     <PostTemplate title={title} desc={desc} category={category} date={date} tags={tags}/>
-                  </a>
                 </Link>
               ))}
           </div>

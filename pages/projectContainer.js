@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styles from '../styles/projectContainer.module.css'
+import Link from 'next/link'
 
-function ProjectTemplate({image, title, description, site, Link, siteText, repo, button='Learn more', index}){
+function ProjectTemplate({image, title, description, site, link, siteText, repo, button='Learn more', index}){
     function codeCheck(){
         if(site){
             return <a href={site}> <button className={styles.projectButton}> {siteText} </button> </a>
@@ -19,12 +20,12 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
     if(index % 2 === 0){
         return(
             <div className={styles.projects}>
-                <div className={styles.image}><Image alt="image" src={image} className={styles.image}/></div>
+                <div style={{ width: '300px', height: '300px' }} className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div>
                 <div className={styles.text}>
                     <div className={styles.projectTitle}>{title}</div>
                     <div className={styles.subTitle}>{description}</div>
                     <div className={styles.button}>
-                        <a href={Link}><button className={styles.projectButton}>{button}</button></a>
+                        <Link href={link}><button className={styles.projectButton}>{button}</button></Link>
                         {codeCheck()}
                         {siteCheck()}
                     </div>
@@ -38,12 +39,12 @@ function ProjectTemplate({image, title, description, site, Link, siteText, repo,
             <div className={styles.projectTitle}>{title}</div>
             <div className={styles.subTitle}>{description}</div>
             <div className={styles.button}>
-                <a href={Link}><button className={styles.projectButton}>{button}</button></a>
+                <Link href={Link}><button className={styles.projectButton}>{button}</button></Link>
                 {codeCheck()}
                 {siteCheck()}
             </div>
         </div>
-        <div className={styles.image}><Image alt="image" src={image} className={styles.image}/></div>
+        <div className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div>
     </div>
     )
 }
@@ -59,7 +60,7 @@ export default function ProjectContainer({data}){
                     image={item.image}
                     title={item.title}
                     description={item.description}
-                    Link={`/pages/${item.id}`}
+                    link={`/pages/${item.id}`}
                     siteText={item.LinkText}
                     site={item.site}
                     repo={item.repo}

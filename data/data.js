@@ -1,52 +1,50 @@
-import proj1 from '../public/proj-1.png'
-import emil from '../public/emil.jpg'
 
 export const data = [
     {
-        image:proj1,
+        image:'/proj-1.png',
         title:'Nier Automata Wiki | Design System',
         description:'description',
-        Link:'',
+        Link:'a',
         LinkText:'Go to site',
         id:1,
         site:'asd',
         repo:'asdss'
     },
     {
-        image:emil,
+        image:'/emil.jpg',
         title:'Nier Automata Modular UI Components',
         description:'description',
-        Link:'',
+        Link:'a',
         LinkText:'Go to site',
         id:2,
         site:'adss',
         repo:'asdas'
     },
     {
-        image:emil,
+        image:'/emil.jpg',
         title:'JSX to Unreal UMG UI',
         description:'description',
-        Link:'',
+        Link:'a',
         LinkText:'Go to site',
         id:3,
         site:'asdas',
         repo:'asdasd'
     },
     {
-        image:emil,
+        image:'/emil.jpg',
         title:'ReactNode to JSON Transformer',
         description:'description',
-        Link:'',
+        Link:'a',
         LinkText:'See in NPM',
         id:4,
         site:'asds',
         repo:'adasd'
     },
     {
-        image:emil,
+        image:'/emil.jpg',
         title:'FoodShare',
         description:'description',
-        Link:'',
+        Link:'a',
         LinkText:'not open',
         id:5,
         site:'',
