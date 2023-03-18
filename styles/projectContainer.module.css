@@ -12,6 +12,7 @@
 
 .title{
     font-size: 44px;
+    padding-bottom: 48px;
     font-weight: bold;
     text-align: center;
 }
@@ -29,7 +30,6 @@
     width: 70%;
     height: 40vh;
     gap: 4rem;
-    /* background-color: aqua; */
 }
 
 .projects{
@@ -39,7 +39,6 @@
     width: 70%;
     height: 40vh;
     gap: 4rem;
-    /* background-color: aqua; */
 }
 
 .image {
@@ -48,7 +47,7 @@
     justify-content: flex-end;
     width: auto;
     min-width: auto;
-    max-width: 40%;
+    max-width: 80%;
     height: 100%;
 }
 
