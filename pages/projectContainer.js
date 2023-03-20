@@ -2,17 +2,17 @@ import Image from 'next/image'
 import styles from '../styles/projectContainer.module.css'
 import Link from 'next/link'
 
-function ProjectTemplate({image, title, description, site, link, siteText, repo, button='Learn more', index}){
+function ProjectTemplate({image, title, description, site, link, siteText, repo, index}){
     function codeCheck(){
         if(site){
-            return <a href={site}> <button className={styles.projectButton}> {siteText} </button> </a>
+            return <Link href={site}> <button className={styles.projectButton}> {siteText} </button> </Link>
         }else{
             return
         }
     }
     function siteCheck(){
         if(repo){
-            return <a href={repo}><button className={styles.projectButton}>Repository</button></a>
+            return <Link href={repo}><button className={styles.projectButton}>Repository</button></Link>
         }else{
             return
         }
@@ -25,7 +25,7 @@ function ProjectTemplate({image, title, description, site, link, siteText, repo,
                     <div className={styles.projectTitle}>{title}</div>
                     <div className={styles.subTitle}>{description}</div>
                     <div className={styles.button}>
-                        <Link href={link}><button className={styles.projectButton}>{button}</button></Link>
+                        <Link href={link}><button className={styles.projectButton}>Learn more</button></Link>
                         {codeCheck()}
                         {siteCheck()}
                     </div>
@@ -39,7 +39,7 @@ function ProjectTemplate({image, title, description, site, link, siteText, repo,
             <div className={styles.projectTitle}>{title}</div>
             <div className={styles.subTitle}>{description}</div>
             <div className={styles.button}>
-                <Link href={Link}><button className={styles.projectButton}>{button}</button></Link>
+                <Link href={link}><button className={styles.projectButton}>Learn more</button></Link>
                 {codeCheck()}
                 {siteCheck()}
             </div>

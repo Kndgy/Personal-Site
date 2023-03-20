@@ -5,11 +5,9 @@ import { data } from '../../data/data.js';
 export default function Item({ item }) {
   return (
     <div>
+      <Link href={'/'}>Go back to home</Link>
       <h1>{item.title}</h1>
       <p>{item.description}</p>
-      <Link href="/">
-        <a>Go back to home</a>
-      </Link>
     </div>
   );
 }
