@@ -8,7 +8,7 @@ export const data = [
         LinkText:'Go to site',
         id:1,
         site:'asd',
-        repo:'asdss'
+        repo:'https://github.com/Kndgy/NieR-Automata-Design-System'
     },
     {
         image:'/emil.jpg',
@@ -18,7 +18,7 @@ export const data = [
         LinkText:'Go to site',
         id:2,
         site:'adss',
-        repo:'asdas'
+        repo:'https://github.com/Kndgy/NieR-Automata-Design-System/tree/Main/src/components'
     },
     {
         image:'/emil.jpg',
@@ -28,7 +28,7 @@ export const data = [
         LinkText:'Go to site',
         id:3,
         site:'asdas',
-        repo:'asdasd'
+        repo:'https://github.com/Kndgy/jsx-to-unreal-umg'
     },
     {
         image:'/emil.jpg',
@@ -38,7 +38,7 @@ export const data = [
         LinkText:'See in NPM',
         id:4,
         site:'asds',
-        repo:'adasd'
+        repo:'https://github.com/Kndgy/jsx-transform'
     },
     {
         image:'/emil.jpg',
@@ -49,6 +49,16 @@ export const data = [
         id:5,
         site:'',
         repo:''
+    },
+    {
+        image:'/emil.jpg',
+        title:'Proximity Audio',
+        description:'Proximity Audio on website, because why not',
+        Link:'a',
+        LinkText:'not open',
+        id:5,
+        site:'',
+        repo:'https://github.com/Kndgy/proximity-site'
     },
   ];
   
