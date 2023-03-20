@@ -50,8 +50,7 @@ export default function Home({data, allPostsData}) {
             <br/>
             also find me on
             <br/>
-            to do make these copy
-            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">Email - ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a>
+            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a>
             <p/>
             i also draw on my free time to refresh my mind, check my art on <a href='https://www.instagram.com/kannnn_0/'>instagram.com/kannnn_0/</a>
           </div>
