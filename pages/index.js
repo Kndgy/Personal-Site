@@ -48,8 +48,9 @@ export default function Home({data, allPostsData}) {
             most of my skills are related to Web tech with React/Native Framework, and C++ on Unreal engine 
             for video game development,
             <br/>
-            find me on
+            also find me on
             <br/>
+            to do make these copy
             <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">Email - ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a>
             <p/>
             i also draw on my free time to refresh my mind, check my art on <a href='https://www.instagram.com/kannnn_0/'>instagram.com/kannnn_0/</a>
