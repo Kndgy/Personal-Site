@@ -2,5 +2,5 @@
     padding: 4em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5rem;
 }

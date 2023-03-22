@@ -1,6 +1,7 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import md from 'markdown-it'
+import Link from 'next/link'
 import styles from '../../styles/PostContent.module.css'
 
 export default function Post({frontmatter, content}) {
@@ -10,6 +11,8 @@ export default function Post({frontmatter, content}) {
   return (
     <main className={styles.container}>
         {/* <img src={bannerImage}/> */}
+        <Link href={'/'}>Go back to home</Link>
+        <br/>
         <h1>{title}</h1>
         <h2>{date}</h2>
         <h3>{category} {tags.join()}</h3>
