@@ -20,7 +20,7 @@ function ProjectTemplate({image, title, description, site, link, siteText, repo,
     if(index % 2 === 0){
         return(
             <div className={styles.projects}>
-                <div className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div>
+                {/* <div className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div> */}
                 <div className={styles.text}>
                     <div className={styles.projectTitle}>{title}</div>
                     <div className={styles.subTitle}>{description}</div>
@@ -44,7 +44,7 @@ function ProjectTemplate({image, title, description, site, link, siteText, repo,
                 {siteCheck()}
             </div>
         </div>
-        <div className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div>
+        {/* <div className={styles.image}><Image width={500} height={500} alt="image" src={image} className={styles.image}/></div> */}
     </div>
     )
 }
