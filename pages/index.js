@@ -43,16 +43,11 @@ export default function Home({data, allPostsData}) {
             I develop Web, Software, and Video Games
           </div>
           <div className={styles.subTitle}>
-            Hi, I like to code and draw, and I'm interested in web, software, and video games development.
-            <p/> 
-            most of my skills are related to Web tech with React/Native Framework, and C++ on Unreal engine 
-            for video game development,
-            <br/>
-            also find me on
-            <br/>
-            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a>
+            Hi, I like to code and draw, and I'm interested in anything related web, software, and video games development.
             <p/>
-            i also draw on my free time to refresh my mind, check my art on <a href='https://www.instagram.com/kannnn_0/'>instagram.com/kannnn_0/</a>
+            Find me on
+            <br/>
+            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a> | <a href='https://www.instagram.com/kannnn_0/'>instagram.com/kannnn_0/</a>
           </div>
         </div>
       </div>
