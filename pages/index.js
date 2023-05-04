@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { getSortedPostsData } from '../components/posts'
 import PostTemplate from '../components/PostTemplate'
 import Link from 'next/link'
-import ProjectContainer from './projectContainer'
+import ProjectContainer from '../components/projectContainer'
 import { data } from '../data/data.js';
 
 export async function getStaticProps() {
