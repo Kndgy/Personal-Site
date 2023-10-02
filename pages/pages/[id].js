@@ -1,7 +1,7 @@
 import path from 'path';
 import Link from 'next/link';
 import { data } from '../../data/data.js';
-import styles from '../../styles/project.module.css'
+import styles from '../../styles/projectContainer.module.css'
 
 export default function Item({ item }) {
   return (
