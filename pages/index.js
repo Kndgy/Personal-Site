@@ -47,7 +47,7 @@ export default function Home({data, allPostsData}) {
             <p/>
             Find me on
             <br/>
-            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">ghanirafli8@gmail.com</a> | <a href='#'>Discord - kan#9105</a> | <a href='https://www.instagram.com/kannnn_0/'>instagram.com/kannnn_0/</a>
+            <a href='https://github.com/Kndgy'>github.com/Kndgy</a> | <a href="mailto: ghanirafli8@gmail.com">ghanirafli8@gmail.com</a> | <a href='#'>kaineee0</a>
           </div>
         </div>
       </div>
